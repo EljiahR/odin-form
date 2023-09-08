@@ -163,6 +163,10 @@ input:focus {
     
 }
 
+.error {
+    border-color: red;
+}
+
 .form-submit {
     padding: 20px;
 }
