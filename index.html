@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin For</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Phudu&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">Eli's Form</h1>
+        <p class="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="unsplash.com" target="_blank">Unsplash</a></p>
+        <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="forest backdrop">
+    </header>
+    <main>
+        <div class="hero"></div>
+        <form action="" method="post">
+            <fieldset class="name">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="first-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </fieldset>
+            <fieldset class="contact">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" name="phone-number" id="phone-number">
+            </fieldset>
+            <fieldset class="password">
+                <label for="new-password">Password</label>
+                <input type="password" name="new-password" id="new-password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>

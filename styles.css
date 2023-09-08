@@ -47,3 +47,47 @@ table {
 	border-spacing: 0;
 }
 /*  Defaulting above  */
+
+
+body {
+    display: flex;
+}
+
+header{
+    width: 25vw;
+    height:100vh
+}
+header img{
+    width: 25vw;
+    height:100vh
+}
+
+.title,.image-credit {
+    position: absolute;
+    color: white;
+}
+.title {
+    top: 40%;
+    left: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Phudu', sans-serif;
+}
+
+.image-credit {
+    bottom: 5px;
+    left: 5%;
+}
+a {
+    text-decoration: none;
+}
+
+
+a:any-link {
+    color: white;
+}
+
+main {
+    background-color: rgb(255, 248, 242);
+}
+
