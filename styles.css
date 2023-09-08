@@ -60,7 +60,7 @@ header{
     width: 25vw;
     height:100vh
 }
-header img{
+header>img:last-child{
     width: 25vw;
     height:100vh;
     position:absolute;
@@ -80,9 +80,14 @@ header img{
     font-size: 2rem;
     font-family: 'Phudu', sans-serif;
     background-color: rgba(0, 0, 0, 0.66);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+#title-logo{
+    height:50px;
+    width:50px;
+}
 
 .image-credit {
     text-align: center;
@@ -117,7 +122,7 @@ main {
     padding-bottom: 30px;
 }
 .hero p {
-    margin-bottom: 10px;
+    margin-bottom: px;
 }
 
 .form {
@@ -145,7 +150,7 @@ label, input{
     display:block;
 }
 label{
-    margin-bottom: 10px;
+    font-size: 0.8rem;
 }
 
 input {
@@ -153,3 +158,30 @@ input {
     border-radius: 5px;;
 }
 
+input:focus {
+    box-shadow: 2px 2px 2px blue;
+    
+}
+
+.form-submit {
+    padding: 20px;
+}
+
+.form-submit-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submit-section button{
+    border: none;
+    border-radius: 5px;
+    color:white;
+    background-color: olive;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    box-shadow: 4px 4px 4px rgb(154, 153, 153);
+    margin-bottom: 6px;
+}

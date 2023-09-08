@@ -11,7 +11,10 @@
 </head>
 <body>
     <header>
-        <div class="title"><h1 id="form-title">Eli's Form</h1></div>
+        <div class="title">
+            <img src="./images/odin-lined.png" id="title-logo">
+            <h1 id="form-title">Eli's Form</h1>
+        </div>
         <p class="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="unsplash.com" target="_blank">Unsplash</a></p>
         <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="forest backdrop">
     </header>
@@ -37,7 +40,7 @@
                 </div>
                 <div class="phone-number">
                     <label for="phone-number">Phone Number</label>
-                    <input type="text" name="phone-number" id="phone-number" required>
+                    <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                 </div>
                 <div class="new-password">
                     <label for="new-password">Password</label>
@@ -49,7 +52,10 @@
                 </div>   
             </div> 
             <div class="form-submit">
-                <button type="submit">Get Started</button>
+                <div class="form-submit-section">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? Log in</p>
+                </div>
             </div>   
         </form>
     </main>
