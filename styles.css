@@ -50,7 +50,10 @@ table {
 
 
 body {
-    display: flex;
+    font-family: sans-serif;
+    background-color: rgb(52, 52, 52);
+    display:flex;
+    justify-content: center;
 }
 
 header{
@@ -59,24 +62,31 @@ header{
 }
 header img{
     width: 25vw;
-    height:100vh
+    height:100vh;
+    position:absolute;
+    z-index: 1;
+    top:0;
 }
 
 .title,.image-credit {
-    position: absolute;
+    position: relative;
     color: white;
+    z-index:2
 }
 .title {
-    top: 40%;
-    left: 100px;
+    top: 50%;
+    width: 25vw;
     text-align: center;
     font-size: 2rem;
     font-family: 'Phudu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.66);
+    
 }
 
+
 .image-credit {
-    bottom: 5px;
-    left: 5%;
+    text-align: center;
+    top: 90%;
 }
 a {
     text-decoration: none;
@@ -87,7 +97,59 @@ a:any-link {
     color: white;
 }
 
+em {
+    font-style: italic;
+}
 main {
     background-color: rgb(255, 248, 242);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero {
+    font-size: 1.2rem;
+    height:20%;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+.hero p {
+    margin-bottom: 10px;
+}
+
+.form {
+    height: 67%;
+    width: 100%;
+}
+.form-data, .form-submit {
+    height: 50%;
+    
+}
+
+.form-data{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+    padding-right: 150px;
+    padding-left: 50px;
+    column-gap: 50px;
+    row-gap: 10px;
+    justify-content: left;
+    box-shadow: -5px 5px 5px lightgray;
+}
+label, input{
+    display:block;
+}
+label{
+    margin-bottom: 10px;
+}
+
+input {
+    border:1px solid lightgray;
+    border-radius: 5px;;
 }
 
